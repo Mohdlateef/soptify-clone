@@ -1,0 +1,125 @@
+
+.Spotify{
+    display: flex;
+    width: 1728px;
+    height: 1116px;
+    background-color:aqua ;
+   overflow: hidden;
+   overflow-y: scroll;
+   background-color:rgb(38, 37, 37);
+color: white;
+}
+.sidebar{
+    width:371.8px;
+    height:982px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    background-color:#000000;;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size:19px;
+    line-height: 24.74px;
+    letter-spacing: -6%;
+    color:#FFFFFF;
+    align-items: baseline;
+    position: relative;
+    left:0px;
+    padding-left: 10px;
+
+}
+.logo-s{
+margin-top:20px;
+
+
+      
+}
+.second-sec-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:self-start;
+    margin-top: 35px;
+    padding-left: 10px;
+    
+}
+.third-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:self-start;
+    margin-top: 35px;
+   
+}
+.forth-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:self-start;
+    margin-top: 35px;
+}
+.fifth-side{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.main-section-1{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-2>h4{
+    font-weight: 700;
+    font-size: 38px;
+    color:white;
+}
+.mornig-playlist{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.mornig-song{
+    border-radius: 10px;
+    margin: 20px;
+    height: 100px;
+    width: 362px;
+    background-color: #000000;
+    
+}
+#song-link{
+    color: white;
+    padding-left: 7px;
+    font-size: 20px;
+}
+.section-2-songs{
+    flex-wrap: wrap;
+}
+.image>h5{
+    font-size: 21px;
+    line-height: 23px;
+}
+.image>p{
+    font-size: 15px;
+    line-height: 19.5px;
+    color: #B3B3B3;
+    ;
+}
+.section-2-box{
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    margin-top: 30px;
+    height: 305px;
+    width:251px;
+    margin-inline:20px;
+    background-color: #000000;
+
+}
