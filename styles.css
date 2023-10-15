@@ -1,18 +1,26 @@
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .Spotify{
-    display: flex;
-    width: 1728px;
-    height: 1116px;
-    background-color:aqua ;
-   overflow: hidden;
+    padding: 0px;
+    margin:0px;
+    width: 100vw;
+    height: 100vh; 
    overflow-y: scroll;
    background-color:rgb(38, 37, 37);
 color: white;
 }
+.section-1{
+    display: flex;
+    height: 85vh;
+    
+    
+}
 .sidebar{
-    width:371.8px;
-    height:982px;
-    margin-top: 10px;
+    height: 97vh;
+    width: 18vw;
     display:flex;
     flex-direction: column;
     background-color:#000000;;
@@ -23,16 +31,50 @@ color: white;
     letter-spacing: -6%;
     color:#FFFFFF;
     align-items: baseline;
-    position: relative;
+    position: sticky;
     left:0px;
     padding-left: 10px;
+    overflow: hidden;
 
 }
+.home-logo{
+    text-align: left;
+    margin-block: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: grey;
+}
+.home,.search-logo,.labrary-logo{
+    font-weight: 700;
+    font-size: 28px;
+    padding-right: 14px;
+}
+.search,.labrary{
+    padding-left: 10px;
+    margin-block:10px ;
+    font-size: 19px;
+    font-weight: 700;
+}
+.search>input{
+    padding-left: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+}
+
+.main{
+    padding-left: 30px;
+    overflow-y:scroll ;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 .logo-s{
-margin-top:20px;
-
-
-      
+margin-top:20px;  
 }
 .second-sec-side{
     display: flex;
@@ -65,12 +107,12 @@ margin-top:20px;
     justify-content: center;
 }
 .main{
+    background-color:rgb(38, 37, 37);
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 75vw;
 }
 .main-section-1{
-    margin: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -121,5 +163,33 @@ margin-top:20px;
     width:251px;
     margin-inline:20px;
     background-color: #000000;
+
+}
+.footer{
+    background-color:rgb(38, 37, 37);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    bottom: 0px;
+    width:100vw;
+    z-index: 3;
+    box-sizing: border-box;
+    justify-content: space-between;
+    }
+    .row-1{
+        margin-inline: 25px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+.row-2{
+font-size: 17px;
+font-weight: 700;
+    text-align: right;
+    padding-inline: 40px;
+    box-sizing: border-box;
+    width:100%;
+    background-color: #1ED760;
 
 }
