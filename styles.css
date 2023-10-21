@@ -158,6 +158,17 @@ width:150px;
     flex-direction: column;
     
 }
+.arrow{
+    display: flex;
+    column-gap: 3px;
+    text-align: center;
+}
+.arr{
+    width: 25px;
+    height: 25px;
+    background-color: #0A0A0A;
+    border-radius: 50%;
+}
 .main-section-1{
     display: flex;
     justify-content: space-between;
