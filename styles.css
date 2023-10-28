@@ -2,12 +2,15 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 .Spotify{
     padding: 0px;
     margin: 0px;
     width: 100vw;
     height: 100vh; 
+    position: relative;
+
    overflow-y: scroll;
    background-color:rgb(38, 37, 37);
 color: white;
@@ -19,7 +22,8 @@ color: white;
     
 }
 .sidebar{
-    flex: 0.20;
+    /* flex: 0.20; */
+    width:37%;
     display:flex;
     flex-direction: column;
     background-color:#000000;;
@@ -32,16 +36,25 @@ color: white;
     align-items: baseline;
     position: sticky;
     left:0px;
-    padding-left: 10px;
-    overflow-x:scroll;
-    padding-left: 20px;
+    /* padding-left: 10px; */
+    overflow-y:scroll;
+    overflow-x: scroll;
+    /* padding-left: 20px; */
+    padding-left: 1.3rem;
    row-gap: 5%;
-
+ height:80vh;
+}
+.first-logo-sec{
+    padding-left:0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 8px;
 }
 .home-logo{
     width: fit-content;
-    text-align: left;
-    margin-block: 10px;
+    /* text-align: left; */
+    /* margin-block: 10px; */
     font-size: 15px;
     font-weight: 600;
   height: fit-content;
@@ -49,22 +62,30 @@ color: white;
     border-radius: 10px;
     /* background-color: grey; */
 }
+#second-logo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    
+    
+}
 
-.home,.search-logo,.labrary-logo{
+.home,.search-logo,.labrary-logo,input{
     font-weight: 700;
-    font-size: 28px;
-    padding-right: 14px;
+    font-size: 24px;
+    /* padding-right: 16px; */
 }
 
 .search,.labrary{
-    padding-left: 10px;
-    margin-block:10px ;
-    font-size: 19px;
+
+    
+    /* margin-block:10px ; */
+    font-size: 14px;
     font-weight: 700;
 }
 .search>input{
-    padding-left: 10px;
-    font-size: 19px;
+ padding-left: 25px; 
+    font-size: 14px;
     font-weight: 700;
     border: none;
     background: transparent;
@@ -72,6 +93,7 @@ color: white;
 }
 .third-side
 {
+    margin-top:3vh;
     display: flex;
     /* background-color: #1ED760; */
     flex-direction: column;
@@ -81,38 +103,83 @@ color: white;
     position: relative;
 }
 .heart{
-    position: absolute;
-    bottom:13px;
-    left:13px;
+    height: 32px;
+    width: 32px;
+    background: linear-gradient(139.33deg, #27148F 0%, #605F9E 60.98%, #86979A 93.5%);
+    padding-left: 10px;
+    padding-top: 5px;
+  
 }
-.gg{
-    position: absolute;
-    bottom: 13px;
-    left:10px;
+
+
+.create-playlist{
+    display: flex;
+    flex-direction: row;
+
 }
 .plus{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 35px;
-    height: 35px;
     text-align: center;
-    
-    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(250, 250, 250 ,0.7);
+}
+#last-img{
+    background-color: #1ED760;
+}
+.playlist,.liked-songs{
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF !important;
+
+
+}
+#Art>img{
+    margin-top:100px;
+display: inline-block;
+width: 100%;
+height: 230px;
+position: absolute;
+left:0px;
 }
 
 .main{
-    flex:0.85;
+    /* flex:0.85; */
     padding-inline:25px ;
     padding-top:15px ;
     overflow-y:scroll ;
+    height: 100vh;
 }
+
+
+.header-image{
+    display: inline-block;
+    /* height: 200px !important;
+    width:300px */
+}
+
+/* .header-content>.p1{
+font-size: 13px;
+font-weight: 500;
+line-height: 4px;
+line-height: 12px;
+}
+.header-content>h1{
+    font-family: Circular Std;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: px;
+
+} */
+
 ::-webkit-scrollbar{
     display: none;
 }
 .logo-s>img{
     display: inline-block;
 margin-top:20px; 
-width:150px; 
+width:130px;
+height: 39px; 
 }
 
 .second-sec-side{
@@ -158,20 +225,17 @@ width:150px;
     flex-direction: column;
     
 }
-.arrow{
-    display: flex;
-    column-gap: 3px;
-    text-align: center;
-}
-.arr{
-    width: 25px;
-    height: 25px;
-    background-color: #0A0A0A;
-    border-radius: 50%;
-}
+
+
 .main-section-1{
+  
     display: flex;
     justify-content: space-between;
+position: relative;
+}
+.arrow{
+    display: flex;
+    column-gap: 5px;
 }
 .side-photo{
    
@@ -192,8 +256,8 @@ width:150px;
 .mornig-playlist{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 25px;
+    row-gap: 1vh;
+    column-gap: 1vw;
    
 }
 .mornig-song{
@@ -245,10 +309,10 @@ width:150px;
 }
 .footer{
     background-color:rgb(38, 37, 37);
-   height: 10%;
+  
     display: flex;
     flex-direction: column;
-    position:sticky;
+    position:absolute;
     bottom: 0px;
     width:100vw;
     z-index: 3;
@@ -257,17 +321,33 @@ width:150px;
     flex-wrap: nowrap;
     padding-top: 10px;
     box-sizing: border-box;
+    height:20vh;
+    /* position: relative; */
     }
     .row-1{
-        margin-inline: 25px;
+        margin-inline: 1vw;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
     }
-    
+    .footer-section-1{
+        font-size: 1.7vw;
+    }
+    .footer-section-1>img{
+        display: inline-block;
+      width:6vw;
+    }
+    .footer-section-2>img{
+        display: inline-block;
+        width:35vw;
+    }
+    .footer-section-3>img{
+        display: inline-block;
+        width: 16vw;
+    }
 .row-2{
-font-size: 17px;
+font-size: 1.5vw;
 font-weight: 700;
     text-align: right;
     padding-inline: 40px;
@@ -275,4 +355,517 @@ font-weight: 700;
     width:100%;
     background-color: #1ED760;
 
+}
+.ft{
+    font-size:14px;
+}
+/* this is used for playlis */
+.header-content>p{
+    font-size: 1.3vw;
+    color:#B3B3B3;
+}
+.header-content>h1{
+    font-size:4vw
+}
+.playlist-main-sec2{
+    width: 100%;
+    background-color: #1ED760;
+}
+.header-image>img{
+    display: inline-block;
+    height: 40vh;
+    width:25vw;
+}
+.song-box{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.song-box>p{
+    font-size: 12px;
+}
+.song-box-sec1{
+    column-gap: 5px;
+}
+
+.song-box-sec1>p{
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 12px;
+}
+.song-box-sec2{
+    column-gap: 5px;
+}
+.song-box-sec2>div{
+    font-size: 12px
+
+}
+
+.header{
+    padding-top: 2vh;
+    width:100%;
+    background:linear-gradient(to bottom,rgb(121,147,141),rgb(67,81,78));
+display: flex;
+align-items:center;
+}
+.album{
+    padding-inline:2vw;
+}
+.album-heading{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(144,146,146);
+    font-weight: normal;
+
+
+}
+.album-heading>h5{
+    font-size: 1.5vw;
+}
+#playlistsidebar{
+    width: 14vw;
+}
+#playlist-main{
+    box-sizing: border-box;
+    overflow-x:hidden ;
+    padding:0px;
+    width:86vw;
+    background-color: rgb(23 28 27);
+}
+.playlist-main-sec2{
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    width:100vw;
+    height: 20vh;
+    padding-bottom: 14vh;
+    background:linear-gradient(to bottom, rgb(41 49 47),rgb(23 28 27));
+}
+.Music{
+    font-weight: normal;
+    line-height: 10px;
+    
+}
+.Music>h5{
+    font-weight: normal;
+    font-size: 15px;
+
+}
+#first-song{
+
+    background-color:rgb(34 35 36);
+
+}
+.Music>p{
+    
+    font-size: 1vw;
+    color:#86979A;
+   
+}
+.Music>h5{
+    font-size: 1.5vw;
+    line-height:1.6vh;
+}
+.music-player{
+display: flex;
+align-items: center;
+flex-direction: column;
+/* row-gap: 7px; */
+}
+.play>img{
+display: inline-block;
+width:20vw;
+
+}
+.line>img{
+    display: inline-block;
+    width:40vw;
+}
+#footer-music>img{
+    display: inline-block;
+    
+}
+#footer-music{
+    align-items: center !important;
+
+}
+.volume{
+display: flex;
+    column-gap: 0.8vw;
+}
+
+.third-side>#play-para{
+    font-size:14px;
+    line-height: 15px;
+    color:palegoldenrod;
+
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+/* here responsive css strats */
+
+@media  screen and (max-width:1350px) {
+    /* .logo-s{
+        display: none;
+      } */
+      /* .ft{
+        font-size: 10px;
+      } */
+        .sidebar,#playlistsidebar{
+            padding-top: 10px;
+         width:20vw;
+         
+            /* background-color: yellowgreen; */
+        }
+        .main,#playlist-main{
+            padding-inline:12px;
+            width:80vw;
+            /* background-color: #1ED760; */
+        }
+        .header{
+            width:80vw;
+        }
+        .arrow{
+            font-size:15px;
+        }
+        .side-photo{
+            font-size:15px
+        }
+     .heading-alb{
+        font-size:20px;
+     }
+     .see{
+        font-size:15px;
+     }
+     #song-link{
+        font-size: 15px;
+     }
+     .image>h5{
+        font-size:15px;
+     }
+     .mornig-song{
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* overflow: hidden; */
+    
+        border-radius: 10px;
+        height: 60px;
+        width: 250px;
+        background-color: #000000;
+        
+    }
+    .main-section-2>h4{
+        padding-block: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color:white;
+    }
+    .section-2-box{
+        box-sizing: border-box;
+        border-radius: 12px;
+        color: white;
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        margin-top: 30px;
+        height: 200px;
+        width:210px;
+        margin-inline:20px;
+        background-color: #000000;
+    padding-top:13px ;
+    }
+    .box>img{
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+
+    }
+    .box>h5{
+        font-size: 13px;
+        line-height: 13px;
+
+
+    }
+    .box>p{
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .hold{
+        font-size :13px !important;
+        margin-top: 5px;
+    }
+}
+@media  screen and (max-width:840px) {
+    .logo-s{
+        display: none;
+      }
+      .ft,.liked-songs{
+        font-size: 13px;
+      }
+      #playlistsidebar{
+        width:27vw;
+      }
+        .sidebar{
+            padding-top: 20px;
+         width:30vw;
+         height: 88vh;
+         
+            /* background-color: yellowgreen; */
+        }
+        .footer{
+            height:12vh;
+        }
+        #playlist-main{
+            width:73vw;
+        }
+        .main{
+            padding-inline:12px;
+            width:70vw;
+            /* background-color: #1ED760; */
+        }
+        .arrow{
+            font-size:15px;
+        }
+        .side-photo{
+            font-size:15px
+        }
+     .heading-alb{
+        font-size:20px;
+     }
+     .see{
+        font-size:15px;
+     }
+     #song-link{
+        font-size: 15px;
+     }
+     .image>h5{
+        font-size:15px;
+     }
+     .mornig-song{
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* overflow: hidden; */
+    
+        border-radius: 10px;
+        height: 60px;
+        width: 200px;
+        background-color: #000000;
+        
+    }
+    .main-section-2>h4{
+        padding-block: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        color:white;
+    }
+    .section-2-box{
+        box-sizing: border-box;
+        border-radius: 12px;
+        color: white;
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        margin-top: 30px;
+        height: 200px;
+        width:160px;
+        margin-inline:20px;
+        background-color: #000000;
+    padding-top:13px ;
+    }
+    .box>img{
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+
+    }
+    .box>h5{
+        font-size: 13px;
+        line-height: 13px;
+
+
+    }
+    .box>p{
+        font-size: 10px;
+        line-height: 13px;
+    }
+   
+
+}
+@media  screen and (max-width:620px) {
+    .logo-s{
+        display: none;
+      }
+      .main-section-1{
+        display: none;
+      }
+      .ft{
+        font-size: 9px;
+      }
+      .liked-songs{
+        font-size:9px;
+      }
+        .sidebar{
+            padding-left:3px;
+            padding-top: 20px;
+         width:25vw;
+         
+            /* background-color: yellowgreen; */
+        }
+        .main{
+            padding-inline:12px;
+            width:70vw;
+            /* background-color: #1ED760; */
+        }
+        .arrow{
+            font-size:15px;
+        }
+        .side-photo{
+            font-size:15px
+        }
+     .heading-alb{
+        font-size:14px;
+     }
+     .see{
+        font-size:10px;
+     }
+     #song-link{
+        font-size: 10px;
+     }
+     .image>h5{
+        font-size:15px;
+     }
+     .mornig-song{
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* overflow: hidden; */
+    
+        border-radius: 10px;
+        height: 60px;
+        width: 150px;
+        background-color: #000000;
+        
+    }
+    .main-section-2>h4{
+        padding-block: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        color:white;
+    }
+    .section-2-box{
+        box-sizing: border-box;
+        border-radius: 12px;
+        color: white;
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        margin-top: 30px;
+        height: 180px;
+        width:130px;
+        margin-inline:10px;
+        background-color: #000000;
+    padding-top:13px ;
+    }
+    .box>img{
+        display: inline-block;
+        height: 150px;
+        width: 120px;
+
+    }
+    .box>h5{
+        font-size: 13px;
+        line-height: 13px;
+
+
+    }
+    .box>p{
+        font-size: 10px;
+        line-height: 13px;
+    }
+   .hold{
+    
+    font-size:13px !important;
+    margin-top:20px;
+   }
+   .just{
+    font-size: 10px !important;
+   }
+   .pr{
+    font-size:5px;
+   }
+
+}
+@media screen and (max-width:500px) {
+    .logo-s{
+      display: none;
+    }
+    .ft{
+      font-size: 10px;
+    }
+      .sidebar{
+          padding-top: 10px;
+       width:35vw;
+       height:93vh;
+          /* background-color: yellowgreen; */
+      }
+      .footer{
+        height:9vh;
+      }
+      #playlistsidebar{
+        width:25vw;
+      }
+      .main{
+          padding-inline:12px;
+          width:70vw;
+          /* background-color: #1ED760; */
+      }
+      #playlist-main{
+        width:78vw;
+        padding:0px;
+      }
+      .arrow{
+          font-size:15px;
+      }
+      .side-photo{
+          font-size:15px
+      }
+   .heading-alb{
+      font-size:16px;
+   }
+   .see{
+      font-size:12px;
+   }
+   #song-link{
+      font-size: 12px;
+   }
+   .image>h5{
+      font-size:12px;
+   }
+   .section-2-songs{
+      padding-inline:20% ;
+          
+   }
+   .main-section-2{
+    padding-left:15%;
+   }
+  .newlogo{
+    font-size:14px;
+    padding-left: 3px;
+  }
+  .search-text{
+    font-size: 10px;
+  }
+  .plus,.heart{
+    display: none;
+}
+
+  } 
+  .volume>img{
+    display: inline-block;
+    height: 4vh !important;
+    width: 3vw !important;
 }
