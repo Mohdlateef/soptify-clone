@@ -3,6 +3,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .Spotify{
     padding: 0px;
@@ -371,6 +372,11 @@ font-weight: 700;
     width: 100%;
     background-color: #1ED760;
 }
+.playlist-main-sec2>img{
+    display: inline-block;
+    width:8vw;
+    height: 7vh;
+}
 .header-image>img{
     display: inline-block;
     height: 40vh;
@@ -436,7 +442,7 @@ align-items:center;
     padding-top: 1rem;
     padding-left: 1.2rem;
     width:100vw;
-    height: 20vh;
+    height: 10vh;
     padding-bottom: 14vh;
     background:linear-gradient(to bottom, rgb(41 49 47),rgb(23 28 27));
 }
@@ -875,6 +881,14 @@ display: flex;
 }
 .song-box>p{
     display: none;
+}
+.playlist-main-sec2{
+    padding-top: 10px;
+    padding-left: 1.2rem;
+    width:100vw;
+    height: 5vh;
+    padding-bottom: 14vh;
+    background:linear-gradient(to bottom, rgb(41 49 47),rgb(23 28 27));
 }
 
   } 
